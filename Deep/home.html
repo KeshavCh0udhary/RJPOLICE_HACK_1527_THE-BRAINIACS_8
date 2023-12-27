@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Fake Detection</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            /* Remove default margins for better layout control */
+            display: flex;
+            /* Use flexbox for overall layout */
+            justify-content: center;
+            /* Center content horizontally */
+            align-items: center;
+            /* Center content vertically */
+            min-height: 100vh;
+            /* Ensure it fills the viewport height */
+            background-color: gray;
+        }
+
+        main {
+            background-color: rgba(255, 255, 255, 0.8);
+            /* Semi-transparent white background for content */
+            padding: 20px;
+            /* Add padding for content readability */
+            border-radius: 5px;
+            /* Soften edges */
+            max-width: 500px;
+            /* Limit width on larger screens */
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            /* Adjust text color for better contrast */
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            /* Arrange elements vertically */
+            align-items: center;
+            /* Center elements horizontally */
+        }
+
+        input {
+            width: 100%;
+            /* Use full width on smaller screens */
+            margin-bottom: 10px;
+        }
+
+        button {
+            width: 100%;
+            /* Use full width on smaller screens */
+        }
+
+        #result {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Deep Fake Detection</h1>
+        <form id="uploadForm" action="/detect" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*, video/*, audio/*" required>
+            <button type="submit">Detect</button>
+        </form>
+        <div id="result"></div>
+    </main>
+
+    <script>
+        const uploadForm = document.getElementById('uploadForm');
+
+        uploadForm.addEventListener('submit', async (event) => {
+            event.preventDefault();
+
+            try {
+                const formData = new FormData(uploadForm);
+                const response = await fetch('/detect', {
+                    method: 'POST',
+                    body: formData,
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error: ${response.status}`);
+                }
+
+                const data = await response.json();
+                document.getElementById('result').textContent = data.result || data.error;
+            } catch (error) {
+                console.error('Error:', error);
+                document.getElementById('result').textContent = 'An error occurred.';
+            }
+        });
+
+    </script>
+</body>
+
+</html>

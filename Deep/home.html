@@ -1,65 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deep Fake Detection</title>
+    <title>Deep Fake Investigator ️‍♀️</title>
     <style>
+      
         body {
-            font-family: sans-serif;
+            font-family: 'Roboto Mono', monospace; 
             margin: 0;
-            /* Remove default margins for better layout control */
             display: flex;
-            /* Use flexbox for overall layout */
             justify-content: center;
-            /* Center content horizontally */
             align-items: center;
-            /* Center content vertically */
             min-height: 100vh;
-            /* Ensure it fills the viewport height */
-            background-color: gray;
+            background-image: url('https://source.unsplash.com/500x500/?code,matrix'); /* Futuristic background */
+            background-size: cover;
+            color: #ff0055;
+            transition: background-color 0.5s ease-in-out;
         }
 
+        /* Content area */
         main {
-            background-color: rgba(255, 255, 255, 0.8);
-            /* Semi-transparent white background for content */
+            background-color: rgb(224, 224, 224);
             padding: 20px;
-            /* Add padding for content readability */
-            border-radius: 5px;
-            /* Soften edges */
+            border-radius: 15px;
             max-width: 500px;
-            /* Limit width on larger screens */
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); 
+            animation: slideInUp 0.7s ease-in-out;
         }
 
+        /* Form elements with enhanced animations and colors */
         h1 {
             text-align: center;
-            color: #333;
-            /* Adjust text color for better contrast */
+            font-size: 2rem;
+            animation: glitchIn 0.5s ease-in-out;
+            color: rgb(0, 153, 255);
+        }
+
+        @keyframes glitchIn {
+            0% { transform: translateX(10px); }
+            50% { transform: translateX(-10px); }
+            100% { transform: translateX(0); }
         }
 
         form {
             display: flex;
             flex-direction: column;
-            /* Arrange elements vertically */
             align-items: center;
-            /* Center elements horizontally */
         }
 
         input {
             width: 100%;
-            /* Use full width on smaller screens */
+          
             margin-bottom: 10px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            animation: scanIn 0.5s ease-in-out;
+        }
+
+        @keyframes scanIn {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { transform: scaleY(1.1); }
         }
 
         button {
             width: 100%;
-            /* Use full width on smaller screens */
+            background-color: #0f0; 
+            color: #000;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            animation: pulse 0.5s infinite;
+            border-radius: 10px;
+            font-weight: bold;
         }
 
         #result {
             margin-top: 20px;
             text-align: center;
+            animation: reveal 0.5s ease-in-out;
+        }
+
+        @keyframes reveal {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
         }
     </style>
 </head>

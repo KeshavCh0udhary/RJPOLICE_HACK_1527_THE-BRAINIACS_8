@@ -10,7 +10,7 @@ DeepFake Detection Web-App 🖥 using Deep Learning(ResNext and LSTM), Flask and
 
 3. Requirements.txt - Python libraries needed for this project. 
 
-4. In order to run this application a folder named the model needs to be created and inside this model, you have to add our trained model uploaded at [Our-Trained-Model](https://drive.google.com/file/d/1hH5HJcoTJgmlnByqfw3j2ojhL8MemPJr/view?usp=sharing)
+4. In order to run this application a folder named as 'model' needs to be created and inside this folder, you have to add our trained model uploaded at [Our-Trained-Model](https://drive.google.com/file/d/1hH5HJcoTJgmlnByqfw3j2ojhL8MemPJr/view?usp=sharing)
 ## THE BRAINIACS
 1. [Krishna Keshav](https://github.com/KeshavCh0udhary)
 2. [Ujjwal Trevedi](https://github.com/ujjwaltrivedi07)

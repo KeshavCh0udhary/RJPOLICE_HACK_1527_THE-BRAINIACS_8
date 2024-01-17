@@ -1,5 +1,5 @@
 # DeepFake Detection - Simplified!
-DeepFake Detection Web-App 🖥 using Deep Learning(ResNext and LSTM), Flask and ReactJs where you can predict whether a video is FAKE Or REAL along with the confidence ratio. 
+DeepFake Detection Web-App[Mirage Breaker] 🖥 using Deep Learning(ResNext and LSTM), Flask and ReactJs where you can predict whether a video is FAKE Or REAL along with the confidence ratio. 
 
 ## Explanation of the Project
 - We've created a DeepFake Detection system that intends to detect DeepFake videos using Deep Learning techniques like ResNext and LSTM. Also integrated the  trained model with the Frontend UI which uses ReactJs and Backend uses Flask.
@@ -14,6 +14,7 @@ DeepFake Detection Web-App 🖥 using Deep Learning(ResNext and LSTM), Flask and
 
 5. In order to run this application a folder named as 'Uploaded_Files' needs to be created inside root(Deep) folder. 
 
+## File Structure
 ```
 RJPOLICE_HACK_1527_THE-BRAINIACS_8
 ├── Deep

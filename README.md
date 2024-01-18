@@ -35,6 +35,6 @@ RJPOLICE_HACK_1527_THE-BRAINIACS_8
    
 ## THE BRAINIACS
 1. [Krishna Keshav](https://github.com/KeshavCh0udhary)
-2. [Ujjwal Trevedi](https://github.com/ujjwaltrivedi07)
+2. [Ujjwal Trivedi](https://github.com/ujjwaltrivedi07)
 3. [Vansh](https://github.com/Vanshmakhija16)
 4. [Swastik Singh Sanger](https://github.com/swastiksanger16)

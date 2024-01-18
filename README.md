@@ -18,6 +18,7 @@ DeepFake Detection Web-App[Mirage Breaker] 🖥 using Deep Learning(ResNext and 
 ```
 RJPOLICE_HACK_1527_THE-BRAINIACS_8
 ├── Deep
+|   ├── PPT
 │   ├── model
 │   ├── static
 |   |   ├── react  

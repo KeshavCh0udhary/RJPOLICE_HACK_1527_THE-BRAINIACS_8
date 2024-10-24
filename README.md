@@ -6,7 +6,7 @@ DeepFake Detection Web-App[Mirage Breaker] 🖥 using Deep Learning(ResNext and 
 
 1. Deep - This is the root folder.
 
-2. Project-Setup.txt - In this file, we've written all the necessary steps to run this project.
+2. Project - Setup.txt - In this file, we've written all the necessary steps to run this project.
 
 3. Requirements.txt - Python libraries needed for this project. 
 
